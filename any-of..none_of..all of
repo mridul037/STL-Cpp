@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	vector<int>v={1,5,3};
+	auto is_even=[](auto n){return n%2==0;};
+    any_of(v.begin(),v.end(),is_even)?cout<<"any even":cout<<"no even";
+	
+	return 0;
+}
