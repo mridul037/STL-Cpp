@@ -1,0 +1,26 @@
+//------------upper bound-in range [first,last)---
+//---------print value striclty greater tha val.
+//--------upper bound only work with sorted sequnces.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	vector<int>v{10,20,30,40};
+	auto i=upper_bound(v.begin(),v.end(),40);
+	cout<<"upper bound val"<<*i<<endl;
+	cout<<"index of upper bound"<<(i-v.begin())<<endl;
+	return 0;
+}
+
+//------------Lower bound-in range [first,last)----------
+//-----------has a value not less than ‘val’ may be equal or greater...
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	vector<int>v{10,20,30,40};
+	auto i=lower_bound(v.begin(),v.end(),30);
+	cout<<"lower bound val"<<*i<<endl;
+	cout<<"index of lower bound"<<(i-v.begin())<<endl;
+	return 0;
+}
