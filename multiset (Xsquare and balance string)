@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    
+    while(t--){
+        string s;
+        cin>>s;
+        unordered_multiset<char>a;
+        unordered_multiset<char>b;
+        for(int i=0;i<s.length();i++){
+        
+        if(a.count(s[i])==b.count(s[i]))a.insert(s[i]);
+        else
+        b.insert(s[i]);
+        
+        }
+        
+        if(a==b)
+        cout<<"1"<<endl;
+        else
+        cout<<"-1"<<endl;
+    }
+    return 0;
+}
