@@ -1,0 +1,42 @@
+//accumulate perform some action in range first to last
+int myxor(int x,int y){
+return x^y;
+}
+int main(){
+
+    int sum = 0; 
+    
+		vector<int>a = {5 , 10 , 15} ; 
+    
+		cout << accumulate(a.begin() , a.end() , sum); //find sum range
+    
+		cout << accumulate(a.begin() , a.end() , sum,myxor);//find xor in range
+    
+		return 0;
+    }
+
+
+//partial sum---print sequence 1 to end.
+int main ()  
+{ 
+    int a[] = {1, 2, 3, 4, 5} ; 
+    int b[5]; 
+     
+    partial_sum(a , a+5 , b); 
+  
+    cout << "Partial Sum - Using Default function: "; 
+    for (int i=0; i<5; i++) 
+        cout << b[i] << ' ';                        //1 3 6 10 15 (o/p)
+    cout << '\n'; 
+      
+    // Using user defined function 
+    partial_sum(a , a+5 , b , myfun) ; 
+  
+    cout << "Partial sum - Using user defined function: "; 
+    for (int i=0; i<5; i++) 
+        cout << b[i] << ' '; 
+    cout << '\n'; 
+  
+    return 0; 
+} 
+    
