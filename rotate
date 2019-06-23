@@ -1,0 +1,18 @@
+LEFT ROTATE:vec.begin() + number of rotation
+RIGHT ROTATE:vec.begin()+vec.size()-number of rotation
+
+
+int main () { 
+    vector<int> vec1{1,2,3,4,5,6,7,8,9}; 
+    
+    // std::rotate function 3 times left 
+     
+    rotate(vec1.begin(), vec1.begin()+3, vec1.end());
+    
+    //rotate 3 times right
+    
+    rotate(vec1.begin(), vec1.begin()+vec1.size()-3, vec1.end()); 
+    
+     for(int i=0; i < vec1.size(); i++)
+  cout<<vec1[i];
+  
