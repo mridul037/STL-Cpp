@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void perm(string str){
+
+  sort(str.begin(),str.end());//string should be sorted
+ .............................................................................  
+   do{
+       cout<<str<<" ";
+       
+   }while(next_permutation(str.begin(),str.end()));//next premutation.
+  ............................................................................
+cout<<endl;
+reverse(str.begin(),str.end());
+  .............................................................................
+   do { 
+        cout <<str<<" "; 
+    } while (prev_permutation(str.begin(),str.end()));//prev permutation. 
+  .............................................................................
+}
+    
+int main() {
+        string s;
+	    cin>>s;
+	    perm(s);
+	    return 0;
+         }
