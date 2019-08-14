@@ -7,11 +7,11 @@ int main () {
     
     // std::rotate function 3 times left 
      
-    rotate(vec1.begin(), vec1.begin()+3, vec1.end());
+    rotate(vec1.begin(), vec1.begin()+3, vec1.end());   // send first at back
     
     //rotate 3 times right
     
-    rotate(vec1.begin(), vec1.begin()+vec1.size()-3, vec1.end()); 
+    rotate(vec1.begin(), vec1.begin()+vec1.size()-3, vec1.end()); //send last at fornt
     
      for(int i=0; i < vec1.size(); i++)
   cout<<vec1[i];
